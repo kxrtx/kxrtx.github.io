@@ -3,6 +3,11 @@
 >
 > this repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
 
+
+ACTIVITY 1
+![image](https://github.com/kxrtx/kxrtx.github.io/assets/90280208/573862dd-80b1-43fe-bcce-66b2f5401a38)
+
+
 > https://varadbhogayata.github.io
 
 ![GitHub stars](https://img.shields.io/github/stars/varadbhogayata/varadbhogayata.github.io) 
