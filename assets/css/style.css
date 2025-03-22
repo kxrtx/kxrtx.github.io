@@ -11,7 +11,7 @@
   /* background-size: cover;  */
   margin: -31px; 
   margin-left:-7px;
-  border: 6px solid rgb(58, 95, 165); 
+  border: 6px solid #0e476d ; 
   border-radius: 50% !important;
 }
 
@@ -278,7 +278,7 @@ ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) 
 ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
   color: rgb(16, 108, 136) !important;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 li.logo span {
@@ -585,7 +585,7 @@ small {
 /* main .teal-text */
 
 .teal-text {
-  color: #4d5f7c !important;
+  color: #0e476d !important;
 }
 
 /* .teal-text {
