@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 
 <head>
@@ -6,235 +7,260 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Materialize -->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
 
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Kirti Mehra | Computer Engineer</title>
 
-  <style>
-    :root {
-      --teal: #00796b;
-      --dark-1: #061821;
-      --dark-2: #0b1f28;
-      --bg-light: #f6f8fb;
-      --text-dark: #0f172a;
-      --muted: #475569;
-      --radius: 20px;
-    }
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    html, body {
-      background: var(--bg-light);
-      color: var(--text-dark);
-    }
+    gtag('config', 'UA-126939217-2');
+  </script>
 
-    /* ---------------- SIDEBAR ---------------- */
-    .side-nav.fixed {
-      width: 300px;
-      background: rgba(255,255,255,0.96);
-      backdrop-filter: blur(12px);
-      box-shadow: 12px 0 40px rgba(0,0,0,0.08);
-    }
-
-    .profile-pic {
-      width: 110px !important;
-      height: 110px !important;
-      border: 3px solid rgba(0,121,107,.25);
-      box-shadow: 0 10px 25px rgba(0,0,0,.15);
-    }
-
-    .side-nav li a {
-      border-radius: 12px;
-      margin: 6px 14px;
-      font-weight: 600;
-    }
-
-    .side-nav li a:hover {
-      background: rgba(0,121,107,.08);
-    }
-
-    /* ---------------- MAIN CANVAS ---------------- */
-    .main-content {
-      margin-left: 300px;
-      min-height: 100vh;
-    }
-
-    @media (max-width: 992px) {
-      .main-content {
-        margin-left: 0;
-      }
-    }
-
-    /* ---------------- HERO ---------------- */
-    #intro.full-height {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      background:
-        radial-gradient(circle at 20% 20%, rgba(0,121,107,0.35), transparent 40%),
-        radial-gradient(circle at 80% 30%, rgba(94,234,212,0.25), transparent 40%),
-        linear-gradient(180deg, var(--dark-1), var(--dark-2));
-    }
-
-    #intro .content.section-padding {
-      max-width: 760px;
-      width: calc(100% - 48px);
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.18);
-      backdrop-filter: blur(16px);
-      border-radius: var(--radius);
-      padding: 48px 44px;
-      box-shadow: 0 30px 80px rgba(0,0,0,.45);
-    }
-
-    #intro h2 {
-      font-weight: 900;
-      letter-spacing: -0.03em;
-    }
-
-    #intro h5 {
-      color: #e6eef5;
-      line-height: 1.7;
-    }
-
-    .typing {
-      color: #5eead4;
-    }
-
-    .icon-btn {
-      border-radius: 999px;
-      box-shadow: 0 10px 22px rgba(0,0,0,.18);
-    }
-
-    .buttons a {
-      border-radius: 999px;
-      padding: 12px 22px;
-      font-weight: 700;
-      box-shadow: 0 14px 30px rgba(0,0,0,.18);
-    }
-
-    @media (max-width: 600px) {
-      #intro .content.section-padding {
-        padding: 32px 24px;
-      }
-    }
-
-    /* ---------------- SECTIONS ---------------- */
-    section.section {
-      padding: 84px 0;
-    }
-
-    .page-title {
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 36px;
-    }
-
-    /* ---------------- CARDS ---------------- */
-    .card {
-      border-radius: 16px;
-      box-shadow: 0 14px 40px rgba(0,0,0,.08);
-    }
-
-    .card-content {
-      padding: 30px;
-    }
-
-    .card-action {
-      font-weight: 700;
-      background: rgba(2,6,23,.04);
-    }
-
-    /* ---------------- PROJECT HOVER ---------------- */
-    #projects .card.medium {
-      transition: transform .18s ease, box-shadow .18s ease;
-    }
-
-    #projects .card.medium:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 22px 55px rgba(15,23,42,.14);
-    }
-
-    /* ---------------- CONTACT ---------------- */
-    #contact p {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    /* ---------------- TRAVEL ---------------- */
-    #travel iframe {
-      width: 100%;
-      max-width: 980px;
-      height: 520px;
-      border-radius: 16px;
-      box-shadow: 0 14px 40px rgba(0,0,0,.12);
-      border: none;
-    }
-
-    @media (max-width: 600px) {
-      #travel iframe {
-        height: 420px;
-      }
-    }
-  </style>
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kirti Mehra | Technology - Management - Design" />
+  <meta property="og:description" content="Technology & Management" />
+  <meta property="og:url" content="https://kxrtx.github.io/" />
+  <meta property="og:site_name" content="Kirti Mehra | Technology - Management - Design" />
+  <meta property="article:publisher" content="https://kxrtx.github.io/" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="" />
+  <meta name="twitter:title" content="" />
+  <meta name="twitter:description" content="Technology & Management" />
+  <meta name="twitter:url" content="" />
+  <meta name="author" content="" />
+  <meta name="description" content="" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#cccccc" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
-
-  <!-- SIDEBAR -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
+
       <li class="logo">
-        <a href="#intro" class="brand-logo teal-text">
-          <img src="/assets/img/mypfp.jpg" class="circle profile-pic" alt="avatar">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo teal-text">
+          <img src="/assets/img/mypfp.jpg" class="circle img-responsive profile-pic" alt="avatar">
         </a>
       </li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="https://kxrtx.github.io/assets/resume/KirtiResume2026.pdf" target="_blank">Resume</a></li>
-      <li><a href="#travel">Travel</a></li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+          class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <!--
+        ICONS:
+        -->
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+          onclick="window.open('https://drive.google.com/file/d/15oVpwY6tpFYty_Y5_zq_HuQFkcdEXjL4/view?usp=drive_link')"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
+        <a aria-label="Open Kirti's resume in a new tab" href="https://kxrtx.github.io/assets/resume/KirtiResume2026.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Places Travelled section" href="#travel" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-globe small"></i><span>Travel</span></a>
+      </li>
     </ul>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Kirti
+        Mehra</a><span class="black-text">Technology - Management - Design</span>
+    </div>
+  </nav>
 
-    <!-- HERO -->
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Places Travelled section" href="#travel" class="waves-effect waves-dark teal-text"><i
+            class="fa fa-globe small"></i><span>Travel</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Kirti's Resume in a new tab"
+          href="https://drive.google.com/file/d/15oVpwY6tpFYty_Y5_zq_HuQFkcdEXjL4/view?usp=drive_link" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
       <div class="container">
-        <div class="content section-padding valign">
-          <h2>Hi, I'm <span class="teal">Kirti Mehra</span></h2>
-          <h5>A <span class="typing"></span></h5>
-          <h5>
-            I build software that transforms complex business processes into scalable, automated systems.
-            With experience across full-stack development, API integrations, and product strategy, I bridge
-            the gap between technical implementation and business impact.
-          </h5>
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal">Kirti Mehra</span></h2>
+              <h5 style="color:#e6eef5">A <span class="typing" style="font-weight: 300; color:#e1e6e8"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>I build software that transforms complex business processes into scalable, automated systems. With experience across full-stack development, API integrations, and product strategy, I bridge the gap between technical implementation and business impact.
 
-          <div class="social">
-            <a href="https://www.linkedin.com/in/kirti-mehra1944/" target="_blank">
-              <button class="icon-btn linkedin"><i class="fa fa-linkedin"></i></button>
-            </a>
-            <a href="https://github.com/kxrtx/" target="_blank">
-              <button class="icon-btn github"><i class="fa fa-github"></i></button>
-            </a>
-          </div>
+I thrive in fast-moving environments where ownership, problem-solving, and execution matter.</h5>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/kirti-mehra1944/" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/kxrtx/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
 
-          <div class="buttons">
-            <a href="#about" class="readme">Read More</a>
-            <a href="#contact" class="contactme">Contact Me</a>
+              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
+                <button class="icon-btn angellist">
+                  <i class="fa fa-angellist"></i>
+                </button>
+              </a> -->
+
+              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+
+                  </span>
+              </a> -->
+              
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Second Section: About -->
 <section id="about" class="section scrollspy white">
@@ -329,19 +355,22 @@
   }
 </style>
 
+
     <!-- Third Section: Experience -->
     <section id="experience" class="section scrollspy">
       <h3 class="page-title white-text teal">Experience</h3>
       <div class="container">
 
         <!-- Latest Experience -->
-        <div class="card">
+
+         <div class="card">
           <div class="card-content">
             <div class="row">
               <div class="col s12 m2">
                 <a href="https://wingmateapp.com" target="_blank"><img alt="Wingmate logo"
                     src="/assets/img/wingmate.png" class="responsive-img center-block" /></a>
               </div>
+              <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="https://wingmateapp.com" target="_blank"
@@ -355,7 +384,7 @@
                 Scoped, architected, and delivered full-stack software solutions for 20+ clients across logistics, healthcare, and field services.
               </li>
               <li>
-                Translated complex business workflows into scalable, data-driven applications integrated with the Wingmate platform.
+Translated complex business workflows into scalable, data-driven applications integrated with the Wingmate platform.
               </li>
               <li>Built custom integrations and automated document workflows using JavaScript and Ruby on Rails, improving operational efficiency and reducing manual processes.</li>
               <li>Designed and implemented end-to-end features (frontend, backend, database) from requirements gathering through deployment and post-launch optimization.</li>
@@ -368,6 +397,7 @@
           </div>
         </div>
 
+        
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -375,6 +405,7 @@
                 <a href="https://security.utoronto.ca/" target="_blank"><img alt="UofT logo"
                     src="/assets/img/uoftlogo.png" class="responsive-img center-block" /></a>
               </div>
+              <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="https://security.utoronto.ca/" target="_blank"
@@ -388,8 +419,8 @@
                 Information Risk - Junior Analyst position at the Department of Information Security, University of Toronto St.George Campus.
               </li>
               <li>
-                Worked on web design and development as per the university’s requirements.
-                Updated and maintained university databases.
+Worked on web design and development as per the university's requirements.
+Updated and maintained university databases.
               </li>
               <li>Lead a project to completely automate the onboarding/new hire process using PowerApps, PowerAutomate and Sharepoint. Working hands-on to build and integrate this process, create full documentation on this project and present this project to associate directors.</li>
               <li>Conducted and reviewed risk assessments (mainly for systems and vendors), developing risk matrices for reporting, and other security and/or privacy-related duties to help mature the risk processes in addition to supporting administration-related activities including coordinating minutes building writing and documenting processes.</li>
@@ -402,6 +433,7 @@
           </div>
         </div>
 
+        
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -409,6 +441,7 @@
                 <a href="https://www.soti.net" target="_blank"><img alt="SOTI logo"
                     src="/assets/img/SotiLogo.png" class="responsive-img center-block" /></a>
               </div>
+              <!-- <div class="col s12 m10"> -->
               <div class="col s12 m10">
                 <p>
                   <span class="card-title"><a href="http://soti.net" target="_blank"
@@ -420,15 +453,15 @@
             <ul>
               <li>
                 Technical Product Owner at SOTI, an industry leader for mobility and IoT management.
-                Strong fundamental understanding of product(s), the demand for EMM and MDM solutions and market trends.
+Strong fundamental understanding of product(s), the demand for EMM and MDM solutions and market trends.
               </li>
               <li>
-                Utilized powerful tools including JIRA, AHA! and Power BI to assign, prioritize and keep up-to-date with requirements or issues for future or previous releases.
+                Utilized powerful tools including JIRA, AHA! and Power BI to assign, prioritize and keep up-to-date with requirements or issues for future or previous releases. 
                 Directly involved in keeping up with the software development cycle, tests and release status of major and minor releases.
               </li>
               <li>
-                Lead and primary contact for the MCMR process; including routing issues, dealing with bugs, and maintaining communications between different teams regarding the development of new features, triaging and planning releases.
-                Directly sorted and worked to clear defect triage issues that would impede releases.
+                Lead and primary contact for the MCMR process; including routing issues, dealing with bugs, and maintaining communications between different teams regarding the development of new features, triaging and planning releases. 
+Directly sorted and worked to clear defect triage issues that would impede releases.
               </li>
               <li>Worked on major and minor release notes and evaluated their API's.
                 Admin for communicating and routing technical customer escalations (911's) as a part of the Triage Team.
@@ -442,6 +475,7 @@
           </div>
         </div>
 
+        <!-- Experience 2 -->
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -487,7 +521,7 @@
             <span>Sept 2024 - Jan 2025 | Toronto, Canada </span>
           </div>
         </div>
-
+        <!-- Experience 3 -->
         <div class="card">
           <div class="card-content">
             <div class="row">
@@ -508,7 +542,7 @@
               <li>
                 Involved in the creation of technical devices, including assembly, as well as involved with testing of bio-tech products.
               </li>
-            </ul>
+            </ul> 
             <br>
             <b>Tools:</b> Hardware, BioElectronics
           </div>
@@ -750,59 +784,60 @@
       </div>
     </div>
 
-    <!-- Certificates -->
-    <div class="card">
-      <div class="card-content">
-        <h4 class="teal-text light center-align">Certificates</h4>
-        <div class="row text-center">
-          <div class="col s4 m2">
-            <img alt="NumPy" src="/assets/img/uoftlogo.png" class="responsive-img" />
-            <p>AI and Machine Learning (UofT)</p>
-          </div>
-          <div class="col s4 m2">
-            <img alt="Pandas" src="/assets/img/uoftlogo.png" class="responsive-img" />
-            <p>Business Minor (Rotman)</p>
-          </div>
-          <div class="col s4 m2">
-            <img alt="Matplotlib" src="/assets/img/fractal.png" class="responsive-img" />
-            <p>Data Science - SQL</p>
+        <!-- Certificates -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="teal-text light center-align">Certificates</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="NumPy" src="/assets/img/uoftlogo.png" class="responsive-img" />
+                <p>AI and Machine Learning (UofT)</p>
+              </div>
+              <div class="col s4 m2">
+                <img alt="Pandas" src="/assets/img/uoftlogo.png" class="responsive-img" />
+                <p>Business Minor (Rotman)</p>
+              </div>
+              <div class="col s4 m2">
+                <img alt="Matplotlib" src="/assets/img/fractal.png" class="responsive-img" />
+                <p>Data Science - SQL</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-</section>
+        </section>
 
     <!-- Seventh Section: Education -->
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text teal center-align">Education</h3>
-      <div class="container">
-        <div class="col s12 m6 l6">
-          <div class="card">
-            <div class="card-content">
-              <p>
-                <span class="card-title"><a href="https://www.engineering.utoronto.ca/" target="_blank" class="teal-text hoverline"><b>University of Toronto</b></a></span>
-              </p>
-              <p class="brown-text" style="font-size: 20px;">Toronto, Canada</p>
-              <p style="font-size: 20px;">
-                <b>Degree: </b>Computer Engineering
-              <p>Minor in Engineering Business</p>
-              <p>Certificate in AI </p>
-              <p>
-                <br>
-                <b>Relevant Coursework:</b>
-              <ul style="font-size: 18px; padding: 0;">
-                <li>Database Systems</li>
-                <li>Software Engineering Management</li>
-                <li>Algorithms</li>
-                <li>Management</li>
-                <li>Finance</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Machine Learning</li>
-                <li>Computer Networks</li>
-              </ul>
-              </p>
+      <div class="container"  >
+          <!-- Education -->
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="https://www.engineering.utoronto.ca/" target="_blank" class="teal-text hoverline"><b>University of Toronto</b></a></span>
+                </p>
+                <p class="brown-text" style="font-size: 20px;">Toronto, Canada</p>
+                <p style="font-size: 20px;">
+                  <b>Degree: </b>Computer Engineering
+                  <p>Minor in Engineering Business</p> 
+                   <p>Certificate in AI </p>  
+                  <p>
+                    <br>
+                    <b>Relevant Coursework:</b>
+                    <ul style="font-size: 18px; padding: 0;">
+                    <li>Database Systems</li>
+                    <li>Software Engineering Management</li>
+                    <li>Algorithms</li>    
+                    <li>Management</li>    
+                    <li>Finance</li>    
+                    <li>Data Structures and Algorithms</li>
+                    <li>Machine Learning</li>
+                    <li>Computer Networks</li>               
+                  </ul>
+                  </p>
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
@@ -839,22 +874,19 @@
       </div>
     </section>
 
-    <!-- Nine Section: Places Travelled -->
-    <section id="travel" class="section scrollspy text-align: center">
-      <h3 class="page-title white-text teal">Places Travelled</h3>
-      <div class="container">
-        <iframe src="https://www.google.com/maps/d/embed?mid=1obTKnlI1HgSTV8D9jQMqykxfj6UZxlM&ehbc=2E312F" width="640" height="480"></iframe>
-      <div>
-    </section>
-  </main>
+      <!-- Nine Section: Places Travelled -->
+      <section id="travel" class="section scrollspy text-align: center">
+        <h3 class="page-title white-text teal">Places Travelled</h3>
+        <div class="container">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1obTKnlI1HgSTV8D9jQMqykxfj6UZxlM&ehbc=2E312F" width="640" height="480"></iframe>
+        <div>
+      </section>
+    </main>
 
-
-  </main>
-
-  <!-- Typed.js -->
+  <!-- typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script>
-    new Typed('.typing', {
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
       strings: ["Strategic Product Innovator", "Solutions Engineer", "Technical Problem Solver"],
       loop: true,
       typeSpeed: 80,
@@ -862,19 +894,24 @@
     });
   </script>
 
-  <!-- Materialize -->
+
+  <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
+    // Materialize - Initializers
     $(document).ready(function () {
-      $(".scrollspy").scrollSpy();
-      $(".button-collapse").sideNav({ closeOnClick: true });
-    });
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
   </script>
-
 </body>
+
 </html>
-
-
-
-
