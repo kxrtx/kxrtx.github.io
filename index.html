@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,509 +6,231 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
-
-  <!-- Materialize - Compiled and minified CSS-->
+  <!-- Materialize -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
+
   <title>Kirti Mehra | Computer Engineer</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'UA-126939217-2');
-  </script>
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Kirti Mehra | Technology - Management - Design" />
-  <meta property="og:description" content="Technology & Management" />
-  <meta property="og:url" content="https://kxrtx.github.io/" />
-  <meta property="og:site_name" content="Kirti Mehra | Technology - Management - Design" />
-  <meta property="article:publisher" content="https://kxrtx.github.io/" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content="Technology & Management" />
-  <meta name="twitter:url" content="" />
-  <meta name="author" content="" />
-  <meta name="description" content="" />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#cccccc" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-
-  <!-- ✅ UI Redesign CSS (Content unchanged) -->
   <style>
-    :root{
-      --bg: #f6f8fb;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --border: #e5e7eb;
-      --shadow: 0 14px 40px rgba(15,23,42,.08);
-      --shadow2: 0 10px 25px rgba(15,23,42,.08);
-      --radius: 16px;
-      --radius-sm: 12px;
+    :root {
       --teal: #00796b;
+      --dark-1: #061821;
+      --dark-2: #0b1f28;
+      --bg-light: #f6f8fb;
+      --text-dark: #0f172a;
+      --muted: #475569;
+      --radius: 20px;
     }
 
-    html, body{
-      background: var(--bg);
-      color: var(--text);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+    html, body {
+      background: var(--bg-light);
+      color: var(--text-dark);
     }
 
-    /* Layout: keep sidebar on desktop, make main content breathe */
-    main{
-      margin-left: 300px; /* side-nav fixed width */
-      background: var(--bg);
-    }
-    @media (max-width: 992px){
-      main{ margin-left: 0; }
-    }
-
-    /* Side nav modernized */
-    .side-nav.fixed{
+    /* ---------------- SIDEBAR ---------------- */
+    .side-nav.fixed {
       width: 300px;
-      background: rgba(255,255,255,.88);
+      background: rgba(255,255,255,0.96);
       backdrop-filter: blur(12px);
-      border-right: 1px solid var(--border);
-      box-shadow: 10px 0 40px rgba(15,23,42,.06);
+      box-shadow: 12px 0 40px rgba(0,0,0,0.08);
     }
-    .side-nav.fixed .logo{
-      padding-top: 28px;
-      padding-bottom: 6px;
-    }
-    .profile-pic{
+
+    .profile-pic {
       width: 110px !important;
       height: 110px !important;
       border: 3px solid rgba(0,121,107,.25);
-      box-shadow: var(--shadow2);
+      box-shadow: 0 10px 25px rgba(0,0,0,.15);
     }
 
-    .side-nav li a{
+    .side-nav li a {
       border-radius: 12px;
       margin: 6px 14px;
       font-weight: 600;
-      color: var(--text) !important;
-      transition: background .15s ease, transform .15s ease;
     }
-    .side-nav li a:hover{
+
+    .side-nav li a:hover {
       background: rgba(0,121,107,.08);
-      transform: translateX(2px);
-    }
-    .side-nav li a i{
-      color: var(--teal) !important;
     }
 
-    /* Mobile top bar */
-    nav.trigger{
-      background: rgba(255,255,255,.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      height: 64px;
-      line-height: 64px;
-    }
-    nav.trigger .name-title{
-      padding-left: 12px;
-    }
-    nav.trigger #name{
-      font-weight: 800;
-      font-size: 1.05rem;
-    }
-    nav.trigger span.black-text{
-      color: var(--muted) !important;
-      font-weight: 500;
+    /* ---------------- MAIN CANVAS ---------------- */
+    .main-content {
+      margin-left: 300px;
+      min-height: 100vh;
     }
 
-    /* Sections */
-    section.section{
-      padding: 84px 0;
-    }
-    @media (max-width: 600px){
-      section.section{ padding: 64px 0; }
+    @media (max-width: 992px) {
+      .main-content {
+        margin-left: 0;
+      }
     }
 
-    /* Page titles */
-    .page-title{
-      font-weight: 800 !important;
-      letter-spacing: -0.02em;
-      margin: 0 0 36px 0 !important;
-    }
-
-    /* Intro: premium hero */
-    #intro.full-height{
+    /* ---------------- HERO ---------------- */
+    #intro.full-height {
       min-height: 100vh;
       display: flex;
       align-items: center;
-      background: linear-gradient(180deg, #0b1220, #0f172a);
-      position: relative;
-      overflow: hidden;
+      justify-content: center;
+
+      background:
+        radial-gradient(circle at 20% 20%, rgba(0,121,107,0.35), transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(94,234,212,0.25), transparent 40%),
+        linear-gradient(180deg, var(--dark-1), var(--dark-2));
     }
-    #intro .overlay{
-      background: radial-gradient(circle at 20% 20%, rgba(0,121,107,.25), transparent 45%),
-                  radial-gradient(circle at 80% 30%, rgba(94,234,212,.20), transparent 40%),
-                  radial-gradient(circle at 50% 100%, rgba(255,255,255,.06), transparent 40%);
-      opacity: 1;
-    }
-    #intro .content.section-padding{
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.12);
-      backdrop-filter: blur(14px);
+
+    #intro .content.section-padding {
+      max-width: 760px;
+      width: calc(100% - 48px);
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      backdrop-filter: blur(16px);
       border-radius: var(--radius);
-      padding: 44px 38px !important;
-      box-shadow: 0 28px 70px rgba(0,0,0,.25);
+      padding: 48px 44px;
+      box-shadow: 0 30px 80px rgba(0,0,0,.45);
     }
-    #intro h2{
+
+    #intro h2 {
       font-weight: 900;
       letter-spacing: -0.03em;
-      margin-bottom: 10px;
-    }
-    #intro h5{
-      color: rgba(230,238,245,.92);
-      font-size: 1.05rem;
-      line-height: 1.75;
-    }
-    #intro .typing{
-      color: #5eead4 !important;
-      font-weight: 500;
     }
 
-    /* Social buttons */
-    .icon-btn{
-      border-radius: 999px !important;
+    #intro h5 {
+      color: #e6eef5;
+      line-height: 1.7;
+    }
+
+    .typing {
+      color: #5eead4;
+    }
+
+    .icon-btn {
+      border-radius: 999px;
       box-shadow: 0 10px 22px rgba(0,0,0,.18);
-      transition: transform .15s ease;
     }
-    .icon-btn:hover{ transform: translateY(-2px); }
 
-    /* CTA buttons */
-    .buttons a{
-      border-radius: 999px !important;
-      padding: 12px 22px !important;
-      font-weight: 700 !important;
-      letter-spacing: .02em;
-      box-shadow: 0 14px 30px rgba(0,0,0,.18);
-      border: 1px solid rgba(255,255,255,.14);
-      transition: transform .15s ease, opacity .15s ease;
-    }
-    .buttons a:hover{ transform: translateY(-2px); opacity: .95; }
-
-    /* Cards: modern + consistent */
-    .card{
-      border-radius: var(--radius) !important;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-    }
-    .card .card-content{
-      padding: 30px 30px !important;
-    }
-    .card .card-action{
-      background: rgba(2,6,23,.03);
-      border-top: 1px solid var(--border);
-      padding: 16px 30px !important;
+    .buttons a {
+      border-radius: 999px;
+      padding: 12px 22px;
       font-weight: 700;
-      color: var(--muted);
-    }
-    .card-title a.hoverline{
-      font-weight: 800 !important;
-      color: var(--teal) !important;
-    }
-    .role{
-      font-size: 1.05rem;
-      font-weight: 800;
-      margin: 10px 0 14px;
-    }
-    .card-content ul li{
-      margin-bottom: 10px;
-      color: var(--muted);
+      box-shadow: 0 14px 30px rgba(0,0,0,.18);
     }
 
-    /* Projects grid cards hover polish */
-    #projects .card.medium{
+    @media (max-width: 600px) {
+      #intro .content.section-padding {
+        padding: 32px 24px;
+      }
+    }
+
+    /* ---------------- SECTIONS ---------------- */
+    section.section {
+      padding: 84px 0;
+    }
+
+    .page-title {
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 36px;
+    }
+
+    /* ---------------- CARDS ---------------- */
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 14px 40px rgba(0,0,0,.08);
+    }
+
+    .card-content {
+      padding: 30px;
+    }
+
+    .card-action {
+      font-weight: 700;
+      background: rgba(2,6,23,.04);
+    }
+
+    /* ---------------- PROJECT HOVER ---------------- */
+    #projects .card.medium {
       transition: transform .18s ease, box-shadow .18s ease;
     }
-    #projects .card.medium:hover{
+
+    #projects .card.medium:hover {
       transform: translateY(-6px);
       box-shadow: 0 22px 55px rgba(15,23,42,.14);
     }
-    #projects .card-image img{
-      filter: saturate(1.05) contrast(1.02);
-    }
 
-    /* Skills icon grid: less “sticker wall” */
-    #skills .card-content h4{
-      font-weight: 800;
-    }
-    #skills img.responsive-img{
-      max-height: 64px;
-      margin-bottom: 10px;
-      opacity: .95;
-    }
-    #skills p{
-      margin-top: 0;
-      font-weight: 600;
-      color: var(--muted);
-    }
-
-    /* Education list spacing */
-    #education ul li{
-      margin-bottom: 8px;
-      color: var(--muted);
-    }
-
-    /* Contact: cleaner rows */
-    #contact .container p{
+    /* ---------------- CONTACT ---------------- */
+    #contact p {
       display: flex;
       align-items: center;
       gap: 14px;
       flex-wrap: wrap;
-      margin: 16px 0;
-    }
-    #contact a.hoverline{
-      font-weight: 700;
-      color: #0f172a;
-      border-bottom: 1px dashed rgba(15,23,42,.25);
-    }
-    #contact a.hoverline:hover{
-      border-bottom-style: solid;
     }
 
-    /* Travel iframe responsive */
-    #travel iframe{
+    /* ---------------- TRAVEL ---------------- */
+    #travel iframe {
       width: 100%;
       max-width: 980px;
       height: 520px;
-      border: 0;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-    @media (max-width: 600px){
-      #travel iframe{ height: 420px; }
+      border-radius: 16px;
+      box-shadow: 0 14px 40px rgba(0,0,0,.12);
+      border: none;
     }
 
-    /* About section: keep your content, modernize visuals */
-    #about{
-      background: #ffffff !important;
-    }
-    #about .about-text{
-      font-size: 1.12rem;
-      line-height: 1.8;
-      color: var(--muted);
-      max-width: 860px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #about .skills-grid{
-      margin-top: 36px;
-    }
-    #about .skill-card{
-      background: linear-gradient(180deg, #ffffff, #f7fafc);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow2);
-    }
-    #about .skill-card h4{
-      font-weight: 900;
-      letter-spacing: -0.01em;
-    }
-
-    /* Make teal section headers feel premium */
-    .teal.page-title{
-      background: transparent !important;
-      color: #ffffff !important;
-    }
-    h3.page-title.white-text.teal{
-      padding: 18px 18px;
-      border-radius: var(--radius);
-      width: fit-content;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      background: linear-gradient(90deg, rgba(0,121,107,1), rgba(20,184,166,1)) !important;
-      box-shadow: 0 16px 35px rgba(0,121,107,.25);
-    }
-
-    /* Small spacing fixes */
-    .container{
-      width: 92%;
-      max-width: 1100px;
+    @media (max-width: 600px) {
+      #travel iframe {
+        height: 420px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
 
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
+  <!-- SIDEBAR -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
-
       <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo teal-text">
-          <img src="/assets/img/mypfp.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        <a href="#intro" class="brand-logo teal-text">
+          <img src="/assets/img/mypfp.jpg" class="circle profile-pic" alt="avatar">
         </a>
       </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-          class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Open Kirti's resume in a new tab" href="https://kxrtx.github.io/assets/resume/KirtiResume2026.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Places Travelled section" href="#travel" class="waves-effect waves-dark teal-text"><i
-            class="fa fa-globe small"></i><span>Travel</span></a>
-      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://kxrtx.github.io/assets/resume/KirtiResume2026.pdf" target="_blank">Resume</a></li>
+      <li><a href="#travel">Travel</a></li>
     </ul>
   </nav>
 
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Kirti
-        Mehra</a><span class="black-text">Technology - Management - Design</span>
-    </div>
-  </nav>
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Places Travelled section" href="#travel" class="waves-effect waves-dark teal-text"><i
-            class="fa fa-globe small"></i><span>Travel</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Kirti's Resume in a new tab"
-          href="https://drive.google.com/file/d/15oVpwY6tpFYty_Y5_zq_HuQFkcdEXjL4/view?usp=drive_link" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
+    <!-- HERO -->
     <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Kirti Mehra</span></h2>
-              <h5 style="color:#e6eef5">A <span class="typing" style="font-weight: 300; color:#e1e6e8"></span></h5>
-              <h5>I build software that transforms complex business processes into scalable, automated systems. With experience across full-stack development, API integrations, and product strategy, I bridge the gap between technical implementation and business impact.
+        <div class="content section-padding valign">
+          <h2>Hi, I'm <span class="teal">Kirti Mehra</span></h2>
+          <h5>A <span class="typing"></span></h5>
+          <h5>
+            I build software that transforms complex business processes into scalable, automated systems.
+            With experience across full-stack development, API integrations, and product strategy, I bridge
+            the gap between technical implementation and business impact.
+          </h5>
 
-I thrive in fast-moving environments where ownership, problem-solving, and execution matter.</h5>
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/kirti-mehra1944/" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/kxrtx/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/kirti-mehra1944/" target="_blank">
+              <button class="icon-btn linkedin"><i class="fa fa-linkedin"></i></button>
+            </a>
+            <a href="https://github.com/kxrtx/" target="_blank">
+              <button class="icon-btn github"><i class="fa fa-github"></i></button>
+            </a>
+          </div>
+
+          <div class="buttons">
+            <a href="#about" class="readme">Read More</a>
+            <a href="#contact" class="contactme">Contact Me</a>
           </div>
         </div>
       </div>
@@ -1126,10 +848,13 @@ I thrive in fast-moving environments where ownership, problem-solving, and execu
     </section>
   </main>
 
-  <!-- typed.js -->
+
+  </main>
+
+  <!-- Typed.js -->
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
+  <script>
+    new Typed('.typing', {
       strings: ["Strategic Product Innovator", "Solutions Engineer", "Technical Problem Solver"],
       loop: true,
       typeSpeed: 80,
@@ -1137,22 +862,19 @@ I thrive in fast-moving environments where ownership, problem-solving, and execu
     });
   </script>
 
-  <!-- jQuery-->
+  <!-- Materialize -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
   <script>
-    // Materialize - Initializers
     $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      $(".button-collapse").sideNav({
-        menuWidth: 190,
-        edge: "left",
-        closeOnClick: true
-      })
-    })
+      $(".scrollspy").scrollSpy();
+      $(".button-collapse").sideNav({ closeOnClick: true });
+    });
   </script>
-</body>
 
+</body>
 </html>
+
+
+
+
